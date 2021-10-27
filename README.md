@@ -20,12 +20,13 @@ npm run dev -- --port 8000
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. If you used another port, change 3000 to your port number.
 
 ## How to Use
-1.1 Click the "Start" Button to start the timer, or click on the timer itself.
-1.2 You can click the "Stop"-Button, to stop the timer, or click on the timer itels.
+1. 
+  - Click the "Start" Button to start the timer, or click on the timer itself.
+  - You can click the "Stop"-Button, to stop the timer, or click on the timer itels.
 2. You can reset the Timer using the "Reset"-Button.
 3. You can Book the Time by clicking the "Book Time" button.
-3.1 Add some Bookings by clicking the "Book Time" button.
-3.2 Fill in ALL form-fields, so the "Book this Task" button is usable. Note, that the already tracked Time until this point is taken into the "Tracked Time" field automatically. You can edit this if you please.
+  - Add some Bookings by clicking the "Book Time" button.
+  - Fill in ALL form-fields, so the "Book this Task" button is usable. Note, that the already tracked Time until this point is taken into the "Tracked Time" field automatically. You can edit this if you please.
 
 After that, you are back on the Page with the new Booking to be listed there now.
 
