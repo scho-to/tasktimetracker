@@ -19,6 +19,16 @@ npm run dev -- --port 8000
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. If you used another port, change 3000 to your port number.
 
+## How to Use
+1.1 Click the "Start" Button to start the timer, or click on the timer itself.
+1.2 You can click the "Stop"-Button, to stop the timer, or click on the timer itels.
+2. You can reset the Timer using the "Reset"-Button.
+3. You can Book the Time by clicking the "Book Time" button.
+3.1 Add some Bookings by clicking the "Book Time" button.
+3.2 Fill in ALL form-fields, so the "Book this Task" button is usable. Note, that the already tracked Time until this point is taken into the "Tracked Time" field automatically. You can edit this if you please.
+
+After that, you are back on the Page with the new Booking to be listed there now.
+
 # Feedback
 ## Time needed for this project
 start: 8:30, end: 15:50
@@ -36,6 +46,20 @@ I think my solution is pretty simple, KISS-styled. Simple enough to be understan
 - Better stylings. I did use custom CSS for this task. I could use a framework to get a better looking in a small time amount.
 - Deletion of bookings (CRUD)
 - Making Searchbar more lazy. With thousands of entrys searched by every letter, this will be a problem.
+
+# Notes
+During buildtime of this project using npm, there were 17 high severity vulnerabilities. They couldn't be fixed using "npm audit fix -f".
+
+It might get fixed, if you run following:
+```bash
+npm i react@latest react-dom@latest stormdb@latest next@latest
+```
+
+Then use
+```bash
+npm run dev
+```
+to start the project on default port.
 
 ## License
 MIT
