@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Installation / How to Run
 
-## Getting Started
+First of all, install all dependencies:
+```bash
+npm i
+# or
+npm install
+```
 
-First, run the development server:
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
+# or define another port
+npm run dev -- --port 8000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. If you used another port, change 3000 to your port number.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Feedback
+## Time needed for this project
+start: 8:30, end: 15:50
+time taken: 7:20h
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## What did I like and didn't like?
+I like this simple task to be done in different ways. I did use next.js which combines React in Frontend and Backend. My styling can be better. Could have been done with a Framework like Bootstrap or TailwindCSS.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## With which parts of your application are you satisfied?
+I think my solution is pretty simple, KISS-styled. Simple enough to be understandable without any instructions. I did use a flat-file DB called [StormDB](https://github.com/TomPrograms/stormdb) by TomPrograms, which is my replacement for databases like mongodb or sqlite. However, a real DB could handle the app way better.
 
-## Learn More
+## Which would need improvement
+- I could use a real database like mongodb. But I think it is harder to be testable and movable to other systems. That's why I chose the flatfile DB Stormdb.
+- Fetched bookings are not sortable by now. They are sorted like FIFO. I could implement a sort method with a real database.
+- Better stylings. I did use custom CSS for this task. I could use a framework to get a better looking in a small time amount.
+- Deletion of bookings (CRUD)
+- Making Searchbar more lazy. With thousands of entrys searched by every letter, this will be a problem.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+MIT

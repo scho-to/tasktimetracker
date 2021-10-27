@@ -1,0 +1,24 @@
+.btn {
+    display: block;
+    width: 100%;
+    padding: 1%;
+    background: rgba(0,0,0,0.1);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.pagination_btn{
+    padding: 2%;
+    margin: 1%;
+    background: rgba(0,0,0,0.1);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.btn:hover,
+.pagination_btn:hover {
+    background: rgba(0,0,0,0.2);
+    cursor: pointer;
+}
